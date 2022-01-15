@@ -3,7 +3,7 @@ import Card from "../UI/Card";
 import styles from "./AddUser.module.css";
 import Button from "../UI/Button";
 
-const AddUser = () => {
+const AddUser = (props) => {
   const [enteredName, setEnteredName] = useState("");
   const [enteredAge, setEnteredAge] = useState("");
   const submitHandler = (event) => {
@@ -14,7 +14,7 @@ const AddUser = () => {
     if (+enteredAge < 1) {
       return;
     }
-    console.log(enteredAge, enteredName);
+    props.fetchData({ name: enteredName, age: enteredAge });
     setEnteredAge("");
     setEnteredName("");
   };
