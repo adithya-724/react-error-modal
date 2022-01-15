@@ -1,8 +1,14 @@
 .list {
   list-style: none;
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: bold;
   text-align: center;
   padding: 0.8rem;
+}
+.list li {
+  border: 0.05rem solid black;
+  border-radius: 0.6rem;
+  margin: 1.4rem;
+  padding: 1.5rem;
 }
