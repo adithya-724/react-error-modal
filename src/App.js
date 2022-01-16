@@ -8,7 +8,6 @@ function App() {
     setUserData((prevData) => {
       return [...prevData, data];
     });
-    console.log(userData);
   };
   return (
     <div>
